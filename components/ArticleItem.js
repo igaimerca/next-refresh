@@ -7,7 +7,7 @@ function ArticleItem({ article }) {
         <Link href={`/article/[id]}`} as={`/article/${article.id}`}>
             <a className={articleStyles.card}>
                 <h3>{`${article.id}: ${article.title}`} &rarr;</h3>
-                <p>{article.body}</p>
+                <p>{article.excerpt}</p>
             </a>
         </Link>
     )
