@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import ArticleList from '../components/ArticleList';
 
 export default function Home({ articles }) {
     console.log(articles);
@@ -8,8 +9,7 @@ export default function Home({ articles }) {
                 <title>Ok.</title>
                 <meta name="keywords" content="programming, blogs" />
             </Head>
-            <h1>Welcome to next</h1>
-            {articles && articles.map(article => <p>{article.title}</p>)}
+            <ArticleList articles={articles} />
         </div>
     )
 }   
